@@ -188,7 +188,7 @@ body {
         grid-template-columns: repeat(1, 1fr);
     }
     .caja {
-        padding: 2.5rem;
+        padding: 2rem;
         height: 10rem;
     }
 
