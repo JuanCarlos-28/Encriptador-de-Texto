@@ -61,6 +61,11 @@ html {
     margin-bottom: 3rem;
     background-color: white;
     border-radius: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 1rem;
 }
 
 .mensaje-1 {
@@ -142,6 +147,31 @@ html {
     width: 100%;
 }
 
+.btn-copiar {
+    border: 1px solid #0011fa;
+    background-color: #eee9e9;
+    color: #0011fa;
+    padding: 1rem;
+    border-radius: 0.8rem;
+    width: 80%;
+    font-size: 1.3rem;
+    font-weight: 600;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.btn-copiar:hover {
+    background-color: rgb(255, 255, 255);
+    cursor: pointer;
+}
+
+.btn-copiar:active {
+    background-color: darkblue;
+    color: white;
+    transform: scale(1.2);
+    transition: 400ms;
+}
+
 @media (min-width: 498px) {
     .botones {
         display: flex;
@@ -152,6 +182,10 @@ html {
     .btn-desencriptar {
         width: 50%;
         margin-top: unset;
+    }
+
+    .btn-copiar {
+        width: 50%;
     }
 
     .mensaje-encriptado {
@@ -171,6 +205,10 @@ html {
     .btn-desencriptar {
         width: 30%;
         margin-top: unset;
+    }
+
+    .btn-copiar {
+        width: 80%;
     }
 
     .principal {

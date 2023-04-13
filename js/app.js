@@ -24,6 +24,7 @@ function encriptar() {
   console.log(textoEncriptado);
   aside.innerHTML = `
   <textarea rows="10" class="mensaje-encriptado" readonly>${textoEncriptado}</textarea>
+  <button class="btn-copiar">Copiar</button>
   `
 }
 
@@ -39,6 +40,7 @@ function desencriptar() {
   console.log(textoEncriptado);
   aside.innerHTML = `
     <textarea rows="10" class="mensaje-encriptado" readonly>${textoEncriptado}</textarea>
+    <button class="btn-copiar">Copiar</button>
     `
 }
 
