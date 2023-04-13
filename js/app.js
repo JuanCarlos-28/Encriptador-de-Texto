@@ -23,8 +23,8 @@ function encriptar() {
 
   console.log(textoEncriptado);
   aside.innerHTML = `
-  <textarea rows="15" class="mensaje-encriptado" readonly>${textoEncriptado}</textarea>
-  <button class="btn-copiar" onclick="copy()">Copiar</button>`
+  <textarea rows="10" class="mensaje-encriptado" readonly>${textoEncriptado}</textarea>
+  `
 }
 
 function desencriptar() {
@@ -38,8 +38,8 @@ function desencriptar() {
 
   console.log(textoEncriptado);
   aside.innerHTML = `
-    <textarea rows="15" class="mensaje-encriptado" readonly>${textoEncriptado}</textarea>
-    <button class="btn-copiar" onclick="copy()">Copiar</button>`
+    <textarea rows="10" class="mensaje-encriptado" readonly>${textoEncriptado}</textarea>
+    `
 }
 
 function copy() {

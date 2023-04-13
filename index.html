@@ -11,37 +11,48 @@
 
 <body>
 
-    <header id="encabezado">
-        <h1><img src="img/Logo-2.png" alt="Logo Alura"></h1>
-        <p>Alura LATAM</p>
+    <header class="header">
+
+        <div class="contenedor">
+            <div class="barra">           
+                <img src="/img/Logo-1.png" alt="Logo">
+                <h1>ALURA LATAM</h1>
+            </div>
+        </div>
     </header>
 
-    <main id="principal" class="contenido">
+    <main class="principal contenedor">
 
         <div class="input">
-            <textarea class="caja" placeholder="Ingrese el texto aquí" autofocus rows="20"></textarea>
+            <textarea class="caja" placeholder="Ingrese el texto aquí" autofocus rows="10"></textarea>
         </div>
 
         <div class="aside">
-            <img src="img/Muñeco.png" alt="Muñeco">
+            <img class="img-mono" src="img/Muñeco.png" alt="Muñeco">
             <p class="mensaje-1">Ningún mensaje fue encontrado</p>
             <p class="mensaje-2">Ingresa el texto que desees encriptar o desencriptar.</p>
         </div>
 
     </main>
 
-    <div class="advertencia contenido">
-        <img src="img/bi_exclamation-circle-fill-1.png" alt="Signo de exclamación">
-        <p>Solo letras minúsculas y sin acentos</p>
-    </div>
+    <section class="advertencia contenedor">
+        <div class="advertencia-contenido">
+            <img src="img/bi_exclamation-circle-fill-1.png" alt="Signo de exclamación">
+            <p>Solo letras minúsculas y sin acentos</p>
+        </div>
+    
+        <div class="botones">
+            <button class="btn-encriptar" onclick="encriptar()">Encriptar</button>
+            <button class="btn-desencriptar" onclick="desencriptar()">Desencriptar</button>
+        </div>
+    </section>
 
-    <div class="botones contenido">
-        <button class="btn-encriptar" onclick="encriptar()">Encriptar</button>
-        <button class="btn-desencriptar" onclick="desencriptar()">Desencriptar</button>
-    </div>
-
-    <footer id="footer">
-        <p>&copy Todos los derechos reservados 2023. Juan Carlos Rivas Lugo.</p>
+    <footer class="footer">
+        <div class="contenedor">
+            <div class="barra">
+                <p class="footer_texto">&copy Todos los derechos reservados 2023. Juan Carlos Rivas Lugo.</p>
+            </div>
+        </div>
     </footer>
 
     <script src="js/app.js"></script>
